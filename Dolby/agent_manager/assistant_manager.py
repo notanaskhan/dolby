@@ -18,7 +18,7 @@ class AssistantManager(BaseManager):
         self.run_id = str(uuid.uuid4())
         self.assistant_id = assistant_id
         self.tools = {}
-        self.websocket = ws
+        self.websocket = wslo
         self.agent_config = agent_config
         self.context_data = context_data
         self.tasks = agent_config.get('tasks', [])
